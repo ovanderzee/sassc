@@ -1,12 +1,34 @@
 {
-  "name": "compile-scss",
+  "name": "sassc",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "description": "Cli app compiling sass or scss files to compose css",
+  "main": "cli.js",
+  "bin": {
+    "sassc": "./cli.js"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC"
+  "type": "module",
+  "types": "types/index.d.ts",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ovanderzee/clear-folder.git"
+  },
+  "keywords": [
+    "compile",
+    "sass",
+    "scss",
+    "compose",
+    "css",
+    "build tool",
+    "cli-app",
+    "cli"
+  ],
+  "author": "Onno van der Zee",
+  "license": "ISC",
+  "devDependencies": {
+  },
+  "dependencies": {
+  }
 }
