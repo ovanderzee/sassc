@@ -24,6 +24,14 @@ On the command line:
 npx sassc src/app.scss dist/style
 ```
 
+In a script:
+
+```js
+import sassc from 'sassc'
+...
+const returnValue = sassc('src/app.scss', 'dist/style.css')
+```
+
 ### Return codes
 
 sassc returns numeric errorcodes:
