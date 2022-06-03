@@ -1,0 +1,20 @@
+
+body {
+  font: $book-font;
+  margin: 0 auto;
+  max-width: $design-max-width;
+  > * {
+    margin: 0 auto;
+    max-width: $content-max-width;
+    padding: ;
+  }
+}
+
+@media all and (min-width: $wide-min) {
+  body {
+    > * {
+      box-sizing: border-box;
+      padding: $wide-gutter;
+    }
+  }
+}

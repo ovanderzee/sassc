@@ -7,7 +7,7 @@
     "sassc": "./cli.js"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "tap test/*.js"
   },
   "type": "module",
   "types": "types/index.d.ts",
@@ -29,5 +29,8 @@
   "license": "ISC",
   "dependencies": {
     "sass": "^1.52.2"
+  },
+  "devDependencies": {
+    "tap": "^16.2.0"
   }
 }

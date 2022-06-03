@@ -1,0 +1,64 @@
+body {
+  background: $brand-light;
+  color: $text-dark;
+}
+
+header {
+  position: sticky;
+  top: 0;
+  background: $brand-dark;
+  color: $text-light;
+  padding: $vertical-gutter $horizontal-gutter;
+  > * {
+    margin: 0;
+  }
+}
+
+main {
+  border-left: $brand-dark 1px dotted;
+  border-right: $brand-dark 1px dotted;
+  background: $text-light;
+  color: $text-dark;
+}
+
+footer {
+  border-top: $brand-dark 1ex solid;
+  background: inherit;
+  color: inherit;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font: $capital-font;
+  margin: 1em 0;
+  &:first-child {
+    margin-top: 0;
+  }
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+h1 {
+  font-size: 2.2em;
+}
+
+h2 {
+  font-size: 1.7em;
+}
+
+h3 {
+  font-size: 1.3em;
+}
+
+p, ol, ul {
+  font: inherit;
+  margin: 1em 0;
+  padding: 0;
+}
+
+li {
+  list-style-position: inside;
+  &::marker {
+    content: ' * ';
+  }
+}

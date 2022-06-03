@@ -1,0 +1,19 @@
+$design-max-width: 1200px;
+$content-max-width: 1024px;
+
+$font-size: 16px;
+$book-font: #{$font-size}/1.4 'sans-serif';
+$capital-font: #{$font-size}/1.1 'serif';
+
+$small-max: 600px;
+$wide-min: $small-max + 1;
+
+$wide-gutter: 1em;
+$small-gutter: 1ex;
+$vertical-gutter: 1ex;
+$horizontal-gutter: 1em;
+
+$brand-light: #aaf;
+$brand-dark: #00a;
+$text-light: #ffc;
+$text-dark: #330;

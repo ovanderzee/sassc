@@ -1,0 +1,82 @@
+body {
+  font: 16px/1.4 "sans-serif";
+  margin: 0 auto;
+  max-width: 1200px;
+}
+body > * {
+  margin: 0 auto;
+  max-width: 1024px;
+  padding: 1ex;
+}
+
+@media all and (min-width: 601px) {
+  body > * {
+    box-sizing: border-box;
+    padding: 1em;
+  }
+}
+body {
+  background: #aaf;
+  color: #330;
+}
+
+header {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  background: #00a;
+  color: #ffc;
+  padding: 1ex 1em;
+}
+header > * {
+  margin: 0;
+}
+
+main {
+  border-left: #00a 1px dotted;
+  border-right: #00a 1px dotted;
+  background: #ffc;
+  color: #330;
+}
+
+footer {
+  border-top: #00a 1ex solid;
+  background: inherit;
+  color: inherit;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font: 16px/1.1 "serif";
+  margin: 1em 0;
+}
+h1:first-child, h2:first-child, h3:first-child, h4:first-child, h5:first-child, h6:first-child {
+  margin-top: 0;
+}
+h1:last-child, h2:last-child, h3:last-child, h4:last-child, h5:last-child, h6:last-child {
+  margin-bottom: 0;
+}
+
+h1 {
+  font-size: 2.2em;
+}
+
+h2 {
+  font-size: 1.7em;
+}
+
+h3 {
+  font-size: 1.3em;
+}
+
+p, ol, ul {
+  font: inherit;
+  margin: 1em 0;
+  padding: 0;
+}
+
+li {
+  list-style-position: inside;
+}
+li::marker {
+  content: " * ";
+}
