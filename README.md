@@ -1,10 +1,9 @@
 
 # sassc
 
-Cli app compiling sass or scss files to compose css.
-It wraps the sass module, previously known as dart-sass.
-The sync methods for compiling and writing the file are implemented.
-to help using this app in a script clause with multiple commands.
+Sass compiler, cli wrapper for the sass module, previously known as dart-sass.
+
+To make it usable as a part of a npm runnable script, sassc works synchronous.
 
 ## Usage
 
@@ -22,5 +21,12 @@ relative to project root:
 On the command line:
 
 ```sh
-npx sassc src/app.scss dist/style.css
+npx sassc src/app.scss dist/style
 ```
+
+### Return codes
+
+sassc returns numeric errorcodes:
+* 0 - success
+* 10 - compile error
+* 20 - write file error
